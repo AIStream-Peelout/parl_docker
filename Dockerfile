@@ -1,6 +1,6 @@
 from continuumio/anaconda3:latest
 RUN pip install torch 
-ARG BRANCH=master
+ARG BRANCH=ms_marco_2.1
 RUN git clone -b $BRANCH https://github.com/isaacmg/ParlAI
 WORKDIR "ParlAI"
 RUN pip install spacy 
